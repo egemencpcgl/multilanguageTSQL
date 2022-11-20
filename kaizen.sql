@@ -72,4 +72,3 @@ GO
 
 Delete from tbl_News /* where id='' )*/
 Delete from tbl_Dictionary /* where tr='' , en='')*/
-*/
