@@ -70,5 +70,6 @@ GO
 select tr from tbl_Dictionary
 GO
 
-Delete from tbl_News /* where id='' )*/
-Delete from tbl_Dictionary /* where tr='' , en='')*/
+Delete from tbl_News where id='' )
+Delete from tbl_Dictionary where tr='' , en='')
+*/
