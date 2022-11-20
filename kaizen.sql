@@ -1,7 +1,5 @@
 /*************************************************** DDL */
 
-/****
-
 CREATE TABLE tbl_News (
     Name NVARCHAR(100) NOT NULL UNIQUE,
     Title NVARCHAR(100),
