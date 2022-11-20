@@ -1,4 +1,7 @@
 /*************************************************** DDL */
+
+/****
+
 CREATE TABLE tbl_News (
     Name NVARCHAR(100) NOT NULL UNIQUE,
     Title NVARCHAR(100),
@@ -14,7 +17,7 @@ CREATE TABLE tbl_Dictionary (
 )
 GO
 
-ALTER TABLE tbl_Dictionary
+/* ALTER TABLE tbl_Dictionary
 ADD newlanguagecolumn  NVARCHAR(25);
 GO
 ALTER TABLE tbl_News
@@ -26,6 +29,7 @@ DROP TABLE tbl_News;
 GO
 DROP TABLE tbl_Dictionary;
 GO
+*/
  
 /*************************************************** DML */
 INSERT INTO tbl_News(Name,Title,Detail,ImageUrls,Category)
@@ -42,17 +46,18 @@ VALUES
 GO
 INSERT INTO tbl_Dictionary(tr,en)
 VALUES
-      ('Giriþ Yap','Login')
+      ('GiriÃ¾ Yap','Login')
     , ('Kategori','Category')
     , ('Ekonomi','Economy')
     , ('Spor','Sport')
     , ('Teknoloji','Technology')
     , ('Tarih','History')
-    , ('Eðitim','Education')
-    , ('Menü','Menu')
+    , ('EÃ°itim','Education')
+    , ('MenÃ¼','Menu')
     , ('Haberler','News')
 GO
  
+/*
 select * from tbl_News where Title like 'tr%'
 GO
 select * from tbl_News where Title like 'en%'
@@ -69,4 +74,4 @@ GO
 
 Delete from tbl_News /* where id='' )*/
 Delete from tbl_Dictionary /* where tr='' , en='')*/
-
+*/
